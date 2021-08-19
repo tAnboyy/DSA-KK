@@ -1,18 +1,14 @@
 package searching;
 
-public class Ceiling {
+public class Floor {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 6, 7, 9};
-        int num = 15;
-        int ans = ceiling(arr, num);
+        int num = 1;
+        int ans = floor(arr, num);
         System.out.println(ans);
     }
 
-    private static int ceiling(int[] arr, int target) {
-        if (target > arr[arr.length - 1]) {
-            return -1;
-        }
-
+    private static int floor(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
@@ -25,6 +21,8 @@ public class Ceiling {
                 return mid;
             }
         }
-        return start;
+        return end;
+
     }
+
 }
