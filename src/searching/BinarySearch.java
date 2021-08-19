@@ -1,11 +1,16 @@
 package searching;
 
+import java.util.Arrays;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-        int num = 5;
+        int num = 2;
         int ans = binarySearch(arr, num);
+        int ans1 = BSmethod(arr, num);
         System.out.println(ans);
+        System.out.println(ans1);
+
     }
 
     private static int binarySearch(int[] arr, int target) {
@@ -22,6 +27,11 @@ public class BinarySearch {
             }
         }
         return -1;
+    }
+
+    //BS method from Java collections
+    private static int BSmethod(int[] arr, int target) {
+         return Arrays.binarySearch(arr, target);
     }
 }
 
