@@ -1,6 +1,5 @@
-package com.dsa;
+package data_structures;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ArrayL {
@@ -15,9 +14,9 @@ public class ArrayL {
 //            System.out.println(val);
 //        }
 
-        ArrayList<ArrayList<Integer>> arr2 = new ArrayList<>(2); //2D ArrayList
+        java.util.ArrayList<java.util.ArrayList<Integer>> arr2 = new java.util.ArrayList<>(2); //2D ArrayList
         for (int i = 0; i < 2; i++) {
-            arr2.add(new ArrayList<>());
+            arr2.add(new java.util.ArrayList<>());
         }
 
         for (int i = 0; i < 2; i++) {

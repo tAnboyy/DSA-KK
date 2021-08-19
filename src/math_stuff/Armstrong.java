@@ -1,4 +1,4 @@
-package com.dsa;
+package math_stuff;
 
 import java.util.Scanner;
 
