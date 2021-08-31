@@ -1,14 +1,18 @@
-package searching;
+package binary_search;
 
-public class Floor {
+public class Ceiling {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 6, 7, 9};
-        int num = 1;
-        int ans = floor(arr, num);
+        int num = 15;
+        int ans = ceiling(arr, num);
         System.out.println(ans);
     }
 
-    private static int floor(int[] arr, int target) {
+    private static int ceiling(int[] arr, int target) {
+        if (target > arr[arr.length - 1]) {
+            return -1;
+        }
+
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
@@ -21,8 +25,6 @@ public class Floor {
                 return mid;
             }
         }
-        return end;
-
+        return start;
     }
-
 }
