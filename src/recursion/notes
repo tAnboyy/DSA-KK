@@ -1,0 +1,33 @@
+MOST IMPORTANT TOPIC FOR INTERVIEWS.
+WORK HARD ON RECURSION!!
+takes time to get the hang of it, but dont give up
+only pen and paper ie drawing recursion trees can help to get past initial stage
+
+all about function calls in internal stack memory
+each function call in stack takes up its own memory so space complexity not constant compared to iterative solutions
+base condition is where no new calls are made, ie recursion stops ie return statement used
+if no b.c, stack overflow occurs
+
+any recursive solution will be based on a mathematical recursive formula/relation
+"tail recursion" if function call is the last statement in function.. is a memory optimization technique
+
+steps to solve-
+1.identify if prob can be broken down into smaller probs
+2.write recurrence relation with b.c, if needed
+3.draw recursive tree
+4.observe the tree- 1. observe flow of functions ie insertion order in stack
+                    2. identify flow of left, right tree calls
+                    3. draw tree again and again
+                    4. use debugger to check flow
+5.see how values are returned at each step, where each function call ends/exits
+6.code
+DO NOT OVERTHINK.
+
+working with variables in-
+1.arguments
+2.return type
+3.body
+
+types of recurrence relations-
+1.linear.. eg fibonacci.. bad time,space complexity since calls get repeated(solved by DP), also cuz it handles smaller ranges
+2.divide and conquer.. eg binary search.. better complexities cuz it handles wider ranges
